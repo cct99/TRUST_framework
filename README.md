@@ -23,6 +23,6 @@ tqdm
 joblib
 
 ## Usage
-First run train_test_data.ipynb to generate the processed MNIST datasets.
-Then, run OCC_train.ipynb to train the One-Class SVM models.
+First run train_test_data.ipynb to generate the processed MNIST datasets. <br />
+Then, run OCC_train.ipynb to train the One-Class SVM models. <br />
 Finally, run OCC_inference.ipynb for inference and analysis.
