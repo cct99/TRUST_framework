@@ -14,12 +14,12 @@ This file implements the OC-SVM inference using the trained OC-SVM models with t
 ## Setup and Dependencies
 Required Python packages:
 
-tensorflow
-numpy
-pandas
-scikit-learn
-matplotlib
-tqdm
+tensorflow<br />
+numpy<br />
+pandas<br />
+scikit-learn<br />
+matplotlib<br />
+tqdm<br />
 joblib
 
 ## Usage
