@@ -2,7 +2,7 @@
 This repository contains a collection of Jupyter notebooks implementing uncertainty quantification and anomaly detection for MNIST digit classification using LeNet architecture and One-Class Classification (OCC). 
 
 ## Repository Contents
-## 1. train_test.ipynb
+## 1. train_test_data.ipynb
 This file implements a data processing pipeline for MNIST dataset. It creates test and training datasets of various sizes. Monte Carlo (MC) inference with dropout for uncertainty estimation will be performed generating these datasets. Training dataset is only used once during offline training and testing dataset will serve as an input for the One Class-Support Vector Machine (OC-SVM) during OCC inference. The datasets will have 24 features used by the OCC: 1) top1 and top2 mean, 2) top1 and top2 std_dev, 3) number of times a class appears throughout the Monte Carlo inference (the column header numbers should sum up to the number of MC samples set in the code). Test data will have noise injected. As of now, it is only a simple Gaussian noise. We will further explore other adversarial attacks soon.
 
 ## 2. OCC_train.ipynb
@@ -21,3 +21,8 @@ scikit-learn
 matplotlib
 tqdm
 joblib
+
+## Usage
+First run train_test_data.ipynb to generate the processed MNIST datasets.
+Then, run OCC_train.ipynb to train the One-Class SVM models.
+Finally, run OCC_inference.ipynb for inference and analysis.
