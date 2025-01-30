@@ -11,7 +11,7 @@ This file implements the OC-SVM training with various hyperparameters. Grid sear
 ### 3. OCC_inference.ipynb
 This file implements the OC-SVM inference using the trained OC-SVM models with two-stage filtering approach. Prior to OC-SVM predictions, we perform a filter to filter out clean normal data based on a threshold (first quartile value of top1_mean of the training dataset). After filtering, the remaining uncertain images (could be either normal or anomalous) will be sent to the OC-SVM for anomaly detection. 
 
-### Setup and Dependencies
+## Setup and Dependencies
 Required Python packages:
 
 tensorflow<br />
